@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Navigation</title>
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+	<!-- common css -->
+		<!-- sources -->
+			<link rel="stylesheet" href="https://mk625.github.io/MK-Styles/sources/app-fonts.css">
+			<link rel="stylesheet" href="https://mk625.github.io/MK-Styles/sources/color-schema.css">
+		<!-- \\\ sources -->
+
+		<!-- global -->
+			<link rel="stylesheet" href="https://mk625.github.io/MK-Styles/global/global-reset.css">
+		<!-- \\\ global -->
+
+		<!-- components -->
+			<link rel="stylesheet" href="https://mk625.github.io/MK-Styles/components/style-bits.css">
+			<link rel="stylesheet" href="https://mk625.github.io/MK-Styles/components/mini-components.css">
+			<link rel="stylesheet" href="https://mk625.github.io/MK-Styles/components/buttons.css">
+			<link rel="stylesheet" href="https://mk625.github.io/MK-Styles/components/animations.css">
+			<link rel="stylesheet" href="https://mk625.github.io/MK-Styles/components/tables.css">
+			<link rel="stylesheet" href="https://mk625.github.io/MK-Styles/components/flex.css">
+			<link rel="stylesheet" href="https://mk625.github.io/MK-Styles/components/responsive.css">
+		<!-- \\\ components -->
+	<!-- \\\ common css -->
+
+	<link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+
+	<div class="app-container">
+		<!-- native focusable -->
+		<section class="mB80">
+			<div class="mB30">
+				<h2 class="f28 font-medium c-status-green">Native Focusable Tags</h2>
+			</div>
+
+			<div class="pL30">
+				<!-- buttons -->
+				<section class="mB60">
+					<div class="mB15">
+						<h3 class="f24 font-medium">Button <span class="c-gray-50 font-regular">(Tabs and contents)</span></h3>
+					</div>
+					<div class="tabs">
+						<ul class="d-flx aI-C g-15 mB15">
+							<li class="list-selected"> <button class="btn tab-btn active" onclick="change_tab_content(0, this, 'basic-tab-contents')">Tab 1</button> </li>
+							<li> <button class="btn tab-btn" onclick="change_tab_content(1, this, 'basic-tab-contents')">Tab 2</button> </li>
+							<li> <button class="btn tab-btn" onclick="change_tab_content(2, this, 'basic-tab-contents')">Tab 3</button> </li>
+						</ul>
+						<ul id="basic-tab-contents">
+							<li class="tab-content tab1-content">
+								<div>
+									<span>Tab Content 1</span>
+								</div>
+							</li>
+							<li class="tab-content tab2-content">
+								<div>
+									<span>Tab Content 2</span>
+								</div>
+							</li>
+							<li class="tab-content tab2-content">
+								<div>
+									<span>Tab Content 3</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- \\\ buttons -->
+		
+
+				<!-- buttons -->
+				<section class="mB60">
+					<div class="mB15">
+						<h3 class="f24 font-medium">Button <span class="c-gray-50 font-regular">(Tabs with left right focus)</span></h3>
+					</div>
+					<div class="tabs lr-focus-parent d-flx g-30">
+						<div class="left-focus-parent">
+							<ul class="d-flx fd-col aI-C g-15">
+								<li class="list-selected"> <button class="btn tab-btn active" onclick="change_tab_content(0, this, 'side-tab-contents')">Tab 1</button> </li>
+								<li> <button class="btn tab-btn" onclick="change_tab_content(1, this, 'side-tab-contents')">Tab 2</button> </li>
+								<li> <button class="btn tab-btn" onclick="change_tab_content(2, this, 'side-tab-contents')">Tab 3</button> </li>
+							</ul>
+						</div>
+						<div class="right-focus-parent">
+							<ul id="side-tab-contents">
+								<li class="tab-content tab1-content">
+									<div>
+										<div class="mB15">
+											<h4 class="f16 font-medium">Tab Content 1</h4>
+										</div>
+										<div class="mB15">
+											<input class="input-ele" type="text">
+										</div>
+										<div class="mB15">
+											<input class="input-ele" type="text">
+										</div>
+										<div class="d-flx aIC g-30">
+											<a class="page-link" href="https://www.zoho.com/">ZOHO Home Page</a>
+											<a class="page-link" href="https://www.google.com/">Google search</a>
+										</div>
+									</div>
+								</li>
+								<li class="tab-content tab2-content">
+									<div>
+										<div class="mB15">
+											<h4 class="f16 font-medium">Tab Content 2</h4>
+										</div>
+										<div class="mB15">
+											<input class="input-ele" type="text">
+										</div>
+										<div class="mB15">
+											<input class="input-ele" type="text">
+										</div>
+										<div class="d-flx aIC g-30">
+											<a class="page-link" href="https://www.zoho.com/">ZOHO Home Page</a>
+											<a class="page-link" href="https://www.google.com/">Google search</a>
+										</div>
+									</div>
+								</li>
+								<li class="tab-content tab2-content">
+									<div>
+										<div class="mB15">
+											<h4 class="f16 font-medium">Tab Content 3</h4>
+										</div>
+										<div class="mB15">
+											<input class="input-ele" type="text">
+										</div>
+										<div class="mB15">
+											<input class="input-ele" type="text">
+										</div>
+										<div class="d-flx aIC g-30">
+											<a class="page-link" href="https://www.zoho.com/">ZOHO Home Page</a>
+											<a class="page-link" href="https://www.google.com/">Google search</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- \\\ buttons -->
+
+
+				<!-- buttons -->
+				<section class="mB60">
+					<div class="mB15">
+						<h3 class="f24 font-medium">Button <span class="c-gray-50 font-regular">(Dropdown)</span></h3>
+					</div>
+					<div>
+						<div>
+							<div>
+								<button class="dropdown-btn dropdown-btn-common" onclick="dropdown.toggle_dropdown(this, null)" data-field="test-dropdown">
+									<div class="d-flx aI-C jC-SB">
+										<span class="btn-value">All</span>
+										<i class="fa-solid fa-angle-down"></i>
+									</div>
+								</button>
+							</div>
+							<div class="dropdown-options-container scrollerY-main" data-field="test-dropdown">
+								<div class="dropdown-lists-container scrollerY-body">
+									<ul class="dropdown-lists">
+										<li class="dropdown-list">
+											<button class="dropdown-list-btn" role="option" onclick="dropdown.toggle_dropdown(null, this)" data-value="Option 1">
+												<span>Option 1</span>
+											</button>
+										</li>
+										<li class="dropdown-list">
+											<button class="dropdown-list-btn" role="option" onclick="dropdown.toggle_dropdown(null, this)" data-value="Option 2">
+												<span>Option 2</span>
+											</button>
+										</li>
+										<li class="dropdown-list">
+											<button class="dropdown-list-btn" role="option" onclick="dropdown.toggle_dropdown(null, this)" data-value="Option 3">
+												<span>Option 3</span>
+											</button>
+										</li>
+										<li class="dropdown-list">
+											<button class="dropdown-list-btn" role="option" onclick="dropdown.toggle_dropdown(null, this)" data-value="Option 4">
+												<span>Option 4</span>
+											</button>
+										</li>
+										<li class="dropdown-list">
+											<button class="dropdown-list-btn" role="option" onclick="dropdown.toggle_dropdown(null, this)" data-value="Option 5">
+												<span>Option 5</span>
+											</button>
+										</li>
+										<li class="dropdown-list">
+											<button class="dropdown-list-btn" role="option" onclick="dropdown.toggle_dropdown(null, this)" data-value="Option 6">
+												<span>Option 6</span>
+											</button>
+										</li>
+										<li class="dropdown-list">
+											<button class="dropdown-list-btn" role="option" onclick="dropdown.toggle_dropdown(null, this)" data-value="Option 7">
+												<span>Option 7</span>
+											</button>
+										</li>
+										<li class="dropdown-list">
+											<button class="dropdown-list-btn" role="option" onclick="dropdown.toggle_dropdown(null, this)" data-value="Option 8">
+												<span>Option 8</span>
+											</button>
+										</li>
+									</ul>                                                                
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- \\\ buttons -->
+				
+				
+				<!-- a -->
+					<section class="mB60">
+						<div class="mB15">
+							<h3 class="f24 font-medium">A <span class="c-gray-50 font-regular">(Links)</span></h3>
+						</div>
+						<div class="d-flx aIC g-30">
+							<a class="page-link" href="https://www.zoho.com/">ZOHO Home Page</a>
+							<a class="page-link" href="https://www.google.com/">Google search</a>
+						</div>
+					</section>
+				<!-- \\\ a -->
+		
+		
+				<!-- input tags -->
+					<section>
+						<div>
+							<div class="mB15">
+								<h3 class="f24 font-medium">Input <span class="c-gray-50 font-regular">(Form inputs)</span></h3>
+							</div>
+							<div class="max-w-400">
+								<div class="d-flx aI-C g-15 jC-SB mB15">
+									<div class="fG-1">
+										<input class="input-ele" type="text" id="task-input">
+									</div>
+									<div class="fS-0">
+										<button class="btn btn-primary" onclick="add_task()">Add Task</button>
+									</div>
+								</div>
+		
+								<div>
+									<ul id="task-lists" class="f14 numbered-list">
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+				<!-- \\\ input tags -->
+			</div>
+		</section>
+		<!-- \\\ native focusable -->
+
+
+		
+		<!-- non native focusable -->
+		<section>
+			<div class="mB20">
+				<h2 class="f28 font-medium c-status-red">Non Native Focusable Tags</h2>
+			</div>
+			<div class="pL30">
+				<section>
+					<div class="mB15">
+						<h3 class="f24 font-medium">li tags</h3>
+					</div>
+					<ul>
+						<li><span>List 1</span></li>
+						<li><span>List 2</span></li>
+						<li><span>List 3</span></li>
+					</ul>
+				</section>
+			</div>
+		</section>
+		<!-- \\\ non native focusable -->
+	</div>
+	
+    
+
+	<!-- scripts -->
+		<script src="./js/jquery.js"></script>
+		<script> var $j = jQuery.noConflict(); </script>
+
+
+		<script src="./js/components.js"></script>
+		<script src="./js/key-navigation-listeners.js"></script>
+	<!-- \\\ scripts -->
+</body>
+</html>
+
