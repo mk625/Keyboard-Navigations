@@ -14,6 +14,10 @@ var dropdown = {
             var action_btn = $j(".dropdown-btn-common[data-field='test-dropdown']");
             
             if (action_btn) { $j(action_btn).find(".btn-value").text(option_val); }
+
+            $j(".dropdown-list-btn").attr("aria-selected", "false");
+            $j(option_ele).attr("aria-selected", "true");
+
 			$j('.dropdown-opened').removeClass('dropdown-opened');
             dropdown.listen_close_dropdown();
         } else if (button_ele != null) {
@@ -86,7 +90,6 @@ var dropdown = {
         }
 	}
 }
-
 
 
 function add_task() {
