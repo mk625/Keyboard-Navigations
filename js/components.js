@@ -1,8 +1,15 @@
 
 
 function change_tab_content(index, btn_ele, tab_contents) {
-    $j(btn_ele).parent().addClass("list-selected").siblings().removeClass("list-selected");
-    $j("#" + tab_contents + " .tab-content").eq(index).show().siblings().hide();
+    $j(btn_ele)
+        .attr("aria-selected", true)
+        .parent().addClass("list-selected")
+        .siblings().removeClass("list-selected")
+        .find("[role='tab']").attr("aria-selected", false);
+    
+    $j("#" + tab_contents + " .tab-content")
+        .eq(index).show().attr("aria-selected", true)
+        .siblings().hide().attr("aria-selected", false);
 }
 
 
