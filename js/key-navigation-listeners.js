@@ -1,5 +1,6 @@
 
 
+// left right form navigation
 $j(document).keydown(function (e) {
     var focusedElement = document.activeElement;
     var focusableContainer = $j(focusedElement).closest(".lr-focus-parent");
@@ -13,9 +14,11 @@ $j(document).keydown(function (e) {
         if (leftFocusableElements.length) { $j(".list-selected > button, .list-selected > a").focus(); }
     }
 });
+// \\\ left right form navigation
 
 
 
+// dropdown options up down navigations
 $j(document).on("keydown", function(event) {
     var $dropdown = $j(".dropdown-options-container.dropdown-opened");
     if ($dropdown.length) {
@@ -40,6 +43,8 @@ $j(document).on("keydown", function(event) {
         }
     }
 });
+// \\\ dropdown options up down navigations
+
 
 
 
